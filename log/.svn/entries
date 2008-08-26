@@ -1,0 +1,35 @@
+9
+
+dir
+18
+svn+ssh://fred@comizu.com/var/svn/repos/freds_blog/trunk/log
+svn+ssh://fred@comizu.com/var/svn/repos/freds_blog
+
+
+
+2008-08-07T18:48:58.446344Z
+3
+fred
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bda85891-c061-4884-b10c-197e95c3b353
+
+
+
+
+
+
+0
+
