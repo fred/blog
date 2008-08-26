@@ -1,0 +1,19 @@
+%h3 Login
+
+- form_tag session_path do 
+  %p 
+    Login
+  %p 
+    = text_field_tag 'login', @login
+  
+  %p 
+    Password
+  %p
+    = password_field_tag 'password', nil
+  
+  %p 
+    Remember me: 
+    = check_box_tag('remember_me', '1', @remember_me)
+  
+  %p 
+    = submit_tag 'Log in'

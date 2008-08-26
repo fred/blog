@@ -1,0 +1,45 @@
+:javascript
+  function ClearForm() {
+  	document.getElementById('comment_name').value="anonymous";
+  	document.getElementById('comment_email').value="";
+  	document.getElementById('comment_website').value="http://";
+  	document.getElementById('comment_body').value="";
+  }
+
+.post
+
+  .title
+    %h3
+      = @article.title
+      
+  %p.byline
+    %i
+      Posted on 
+      = @article.published_date.to_s(:short)
+
+  .entry
+    = print_formated(@article.formatting_type, @article.excerpt)  
+  .entry
+    = print_formated(@article.formatting_type, @article.body)
+      
+  %h4 
+    Comments
+  - @comments.each do |t|
+    .comment
+      %p 
+        %u 
+          %i
+            = user_comment_link(t)
+        said:
+      %p
+        = t.body
+      
+  %h4
+    Post a comment
+    
+  #thankyou{:style=>"display: none"}
+    %p Thank you for your message, it's awaiting moderation.
+    
+  - remote_form_for(@comment, :url => {:controller => "comments", :action => "create"}, :success => "Element.show('thankyou');ClearForm();Element.hide('new_comment');") do |f|
+    = render :partial => "/comments/form", :locals => {:f => f}
+    

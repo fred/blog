@@ -1,0 +1,53 @@
+!!! strict
+%html
+  %head
+    %title= controller.action_name
+    %meta{ 'http-equiv' => 'Content-Type', :content => 'text/html; charset=UTF-8' }
+    / = stylesheet_link_tag 'scaffold'
+    = stylesheet_link_tag  "blueprint/src/reset.css"
+    = stylesheet_link_tag  "blueprint/src/grid.css"
+    = stylesheet_link_tag  "blueprint/src/typography.css"
+    = stylesheet_link_tag  "blueprint/src/forms.css"
+    = stylesheet_link_tag  "blueprint/src/print.css"
+    = stylesheet_link_tag  "main"
+    = stylesheet_link_tag  "syntaxi/ruby"
+    = stylesheet_link_tag  "syntaxi/yaml"
+
+    = javascript_include_tag :defaults, :cache => true
+    
+  %body
+    
+    #site
+    
+      #header
+        %h1 
+          = link_to "Fred's Blog", "/"
+        %h3
+          = link_to "Random Ruby and Linux posts.", "/"
+      .clear
+      
+      #main
+        .flash_notice
+          %p= flash[:notice]
+        .content
+          = yield
+      
+      #sidebard
+        
+        .sidebar_block
+          %h3 Sections
+          Section1
+          Section2
+        
+        .sidebar_block
+          %h3 Categories
+          Category 1
+          Category 2
+      
+      
+      .clear
+
+      #footer
+        %p Created with Ruby on Rails.
+        %p Released Under MIT License.
+        

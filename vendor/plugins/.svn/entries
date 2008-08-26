@@ -1,0 +1,55 @@
+9
+
+dir
+18
+svn+ssh://fred@comizu.com/var/svn/repos/freds_blog/trunk/vendor/plugins
+svn+ssh://fred@comizu.com/var/svn/repos/freds_blog
+
+
+
+2008-08-11T09:55:57.501881Z
+13
+fred
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bda85891-c061-4884-b10c-197e95c3b353
+
+mobile-fu
+dir
+
+will_paginate
+dir
+
+action_cache
+dir
+
+haml
+dir
+
+restful-authentication
+dir
+
+atom_feed_helper
+dir
+
+rails-settings
+dir
+
+acts-as-taggable-on
+dir
+
+permalink_fu
+dir
+

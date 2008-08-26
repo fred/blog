@@ -1,0 +1,43 @@
+9
+
+dir
+18
+svn+ssh://fred@comizu.com/var/svn/repos/freds_blog/trunk/app/views/admin
+svn+ssh://fred@comizu.com/var/svn/repos/freds_blog
+
+
+
+2008-08-14T14:18:03.839779Z
+16
+fred
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bda85891-c061-4884-b10c-197e95c3b353
+
+settings
+dir
+
+users
+dir
+
+comments
+dir
+
+articles
+dir
+
+dashboard
+dir
+

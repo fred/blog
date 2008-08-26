@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>New Rise</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--header start -->
+<div id="header">
+<a href="#" class="member">members login</a>
+<img src="images/logo.gif" alt="web development" />
+<ul class="nav">
+<li class="home">home</li>
+<li><a href="#">our clients</a></li>
+<li><a href="#"> support</a></li>
+<li><a href="#">new services</a></li>
+<li><a href="#">solutions </a></li>
+<li><a href="#">testimonials</a></li>
+<li><a href="#">contact</a></li>
+</ul>
+</div>
+<!--header end -->
+<!--body start -->
+<div id="body">
+<p class="top"></p>
+<!--left panel start -->
+<div id="left">
+<h2>Welcome</h2>
+<h3>Dondimentum sit ametelit In hac habitasse</h3>
+<p class="text1">New Rise is a free, tableless, W3C-compliant web design layout by Template World. This template has been tested and proven compatible with all major browser environments and operating systems. You are free to modify the design to suit your tastes in any way you like.</p>
+<p class="text2">We only ask you to not remove "Design by Template World" and the link http://www.templateworld.com from the footer of the template. These templates are licensed under a Creative Commons Attribution 2.5 License. This means that you are free to modify the design to suit your tastes in any way you like, but you must include the provided link back to Template World.</p>
+<p class="rm"><a href="#"></a></p>
+<h2>latest events</h2>
+<h3 class="date">On 02 January 2007</h3>
+<p class="event"><b>Donec suscipit dui at nisi. Sed id lacus ac vehicula</b> Suspendisse nisi. Vestibulum vitae enim  tincidunt. Suspendisse potenti</p>
+<p class="rm2"><a href="#"></a></p>
+<h3 class="date">On 02 January 2007</h3>
+<p class="event"><b>Donec suscipit dui at nisi. Sed id lacus ac vehicula</b> Suspendisse nisi. Vestibulum vitae enim  tincidunt. Suspendisse potenti</p>
+<p class="rm2"><a href="#"></a></p>
+</div>
+<!--left panel end -->
+<!--right panel start -->
+<div id="right">
+<h2>Search</h2>
+<form name="serch" action="#" method="post">
+<p class="domain">enter the domain name</p>
+<input type="text" name="name" />
+<input type="submit" name="go" value="" class="go" />
+</form>
+<h2 class="scope">Our scopes</h2>
+<ul>
+<li><a href="#">celit. Proin tortdu ct</a></li>
+<li><a href="#">blandit Euctus nesta, </a></li>
+<li><a href="#">tempus ut, augue.</a></li>
+<li><a href="#">Suspendisse eu svel</a></li>
+<li><a href="#">neque Egestasmodt</a></li>
+<li><a href="#">faucibus, Nisi a auctor</a></li>
+<li><a href="#">tristique, est nisorta</a></li>
+<li><a href="#">arcu, vel lacinia arcid</a></li>
+<li><a href="#">Justo. Nunc lacus.</a></li>
+</ul>
+<a href="#"><img src="images/banner.gif" alt="banner" width="157" height="146" border="0" class="banner" /></a>
+<p class="bottom">
+<a href="#" class="xhtm"></a>
+<a href="#" class="css"></a>
+</p>
+</div>
+<!--right panel end -->
+<p class="bot"></p>
+<br class="spacer" />
+</div>
+<!--body end -->
+<!--footer start -->
+<div id="footer">
+<ul>
+<li><a href="#">home</a>|</li>
+<li><a href="#">our clients</a>|</li>
+<li><a href="#">support</a>|</li>
+<li><a href="#">new services</a>|</li>
+<li><a href="#">solutions</a>|</li>
+<li><a href="#">testimonials</a></li>
+<li><a href="#">contact us</a></li>
+</ul>
+<p class="copyright">&nbsp; new rise web development. All rights reserved.</p>
+<p class="design">Designed By: <a href="http://www.templateworld.com/" target="_blank" class="link">Template World</a></p>
+</div>
+<!--footer end -->
+</body>
+</html>

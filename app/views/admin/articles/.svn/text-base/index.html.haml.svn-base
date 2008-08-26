@@ -1,0 +1,30 @@
+%h2 Articles
+%table
+  %tr
+    %th Title
+    %th Created
+    %th User
+    %th Published
+    %th
+    %th
+    %th
+  %tr
+    - for article in @articles
+      %tr
+        %td 
+          = link_to article.title, edit_admin_article_path(article)
+        %td 
+          = article.published_date.to_s(:short)
+        %td 
+          = article.user.login
+        %td 
+          = boolean_to_image_small(article.published)
+        %td 
+          = link_to 'Preview', admin_article_path(article)
+        %td 
+          = link_to 'Edit', edit_admin_article_path(article)
+        %td 
+          = link_to 'Delete', admin_article_path(article), :confirm => 'Are you sure?', :method => :delete
+
+
+= link_to 'New article', new_admin_article_path 

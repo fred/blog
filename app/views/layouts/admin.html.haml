@@ -1,0 +1,54 @@
+!!! strict
+%html
+  %head
+    %title= controller.action_name
+    %meta{ 'http-equiv' => 'Content-Type', :content => 'text/html; charset=UTF-8' }
+    = stylesheet_link_tag  "admin_scaffold"
+    = stylesheet_link_tag  "blueprint/src/reset.css"
+    = stylesheet_link_tag  "blueprint/src/grid.css"
+    = stylesheet_link_tag  "blueprint/src/typography.css"
+    = stylesheet_link_tag  "blueprint/src/forms.css"
+    /= stylesheet_link_tag  "blueprint/src/print.css"
+    = stylesheet_link_tag  "admin.css"
+    
+    = javascript_include_tag :defaults, :cache => true
+    
+  %body
+  
+  
+  #site
+  
+    #header
+      = link_to image_tag('/images/users.png'), admin_users_path 
+      = link_to image_tag('/images/articles.png'), admin_articles_path 
+      = link_to image_tag('/images/comments.png'), admin_comments_path 
+      = link_to image_tag('/images/settings.png'), admin_settings_path
+    .clear
+    
+    #main
+      .flash_notice
+        %p= flash[:notice]
+      .content
+        = yield
+    
+    #sidebar
+      
+      .sidebar_block
+        %h3 Tags
+        %ul
+        - @tags.each do |tag|
+          %li
+            = link_to "#{tag.name} (#{tag.taggings.size})", :controller => "articles", :tag => tag.name
+            
+      .sidebar_block
+        %h3 Categories
+        Category 1
+        Category 2
+        
+    .clear
+
+    #footer
+      %p Created with Ruby on Rails.
+      %p Released Under MIT License.
+      
+  

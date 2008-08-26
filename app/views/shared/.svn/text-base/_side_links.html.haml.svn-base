@@ -1,0 +1,31 @@
+%h3 Great Links
+%ul
+  %li 
+    = link_to "ruby_inside","http://www.rubyinside.com"
+  %li 
+    = link_to "Free Rails Podcasts", "http://www.railscasts.com"
+  %li 
+    = link_to "RubyCorner","http://www.rubycorner.com"
+  %li
+    = link_to "Ruby Study Notes", "http://rubylearning.com/"
+  %li
+    = link_to "The Peepcodes", "http://www.peepcode.com"
+  %li
+    = link_to "A Great Rails API", "http://www.railsbrain.com"
+  %li
+    = link_to "akitaonrails", "http://www.akitaonrails.com"
+  %li
+    = link_to "Dr. Nic", "http://www.drnicwilliams.com/"
+  %li            
+    = link_to "redhanded", "http://redhanded.hobix.com/"
+  %li
+    = link_to "PlanetRubyOnRails", "http://www.planetrubyonrails.org/"
+  %li 
+    = link_to "Try HAML", "http://haml.hamptoncatlin.com/"
+  %li 
+    = link_to "Awesome VPS hosting", "https://manage.slicehost.com/customers/new?referrer=2123857464"
+    
+  %li
+    %br
+    %br
+    = link_to image_tag("http://aneventapart.com/webdesignsurvey/templates/ala/images/i-took-the-2008-survey.gif"), "http://www.alistapart.com/articles/survey2008", :alt => "The Web Design Survey, 2008", :title => "The Web Design Survey, 2008"          

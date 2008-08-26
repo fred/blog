@@ -1,0 +1,11 @@
+= f.hidden_field :article_id
+= f.error_messages
+= f.label :name
+= f.text_field :name, :value => "Anonymous", :size => 40
+= f.label :email
+= f.text_field :email, :size => 40
+= f.label :website
+= f.text_field :website, :value => "http://", :size => 40
+= f.label :body
+= f.text_area :body, :cols => 58, :rows => 13
+= f.submit "Submit Comment"

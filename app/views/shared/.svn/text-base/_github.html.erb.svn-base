@@ -1,0 +1,23 @@
+<div id="github-badge" style="width: 250px;">
+  <div class="header">
+    <span class="title">My Github projects</span> 
+    <span>(<a href="http://github.com/drnic">fred</a>)</span>
+  </div>
+  <div class="body">
+    <div class="repos">
+      <ul id="repo_listing">
+        <li class="public clickable">
+          <img src="http://github.com/images/icons/public.png" alt="public">
+          <strong>
+            <a onclick="Element.show('github_description');">amazon_ruby_tools</a>
+          </strong>
+          <div style="display: none;" id="github_description">
+            <a href="http://github.com/fred/amazon_ruby_tools/tree/master" onclick="Element.hide('github_description');" target="_blank">
+               Some Ruby Tools to work on Amazon S3 and EC2, such as buckets list, creation, mysql backup to S3, cron jobs, and Gentoo specific little hacks... ;) 
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

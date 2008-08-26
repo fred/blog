@@ -1,0 +1,364 @@
+/*
+Design by TemplateFusion
+http://templatefusion.org
+Released for free under a Creative Commons Attribution 2.5 Canada License
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url(/images/Sleek/img01.jpg) repeat-x;
+	font-size: 13px;
+	color: #666666;
+}
+
+body, th, td, input, textarea, select, option {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#666666;
+}
+
+h1 {
+	letter-spacing: -2px;
+	font-size: 2.8em;
+}
+
+h2 {
+	letter-spacing: -1px;
+	font-size: 2.2em;
+}
+
+h3 {
+	font-size: 1.7em;
+}
+
+h4 {
+	font-size: 1.3em;
+}
+
+h4 {
+	font-size: 1.0em;
+}
+
+p, ul, ol {
+	line-height: 120%;
+}
+
+img {
+border: 0px;
+}
+
+a {
+	color: #333333;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Header */
+
+#header {
+	width: 90%;
+	height: 200px;
+	margin: 0 auto;
+	background: url(/images/Sleek/img02.jpg) no-repeat left center;
+}
+
+#logo {
+	float: left;
+	padding: 90px 0 0 0;
+}
+
+#logo h1, #logo p {
+	margin: 0;
+	color: #FFFFFF;
+	padding-left: 60px;
+}
+
+#logo a {
+	color: #FFFFFF;
+}
+
+#search {
+	float: right;
+	width: 22%;
+	padding: 140px 0 0 0;
+	margin: 0;
+}
+
+#search form {
+	margin: 0;
+	padding: 0;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+#search input {
+	width: 97%;
+	background-color:#bbbaaa;
+	color: #fff;
+	font-size: 1.2em;
+}
+
+#s {
+	width: 190px;
+	padding: 3px 5px;
+	background: #FFFFFF url(/images/Sleek/img03.gif) repeat-x;
+	border: 1px solid #FFFFFF;
+}
+
+#x {
+	display: none;
+}
+
+/* Page */
+
+#page {
+	width: 92%;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+/* Content */
+
+#content {
+	padding: 0;
+	float: left;
+	width: 75%;
+	padding-left: 10px;
+}
+
+.post {
+	padding: 0 0 20px 0;
+}
+
+.title {
+	margin: 0;
+}
+
+.byline {
+	margin: 0;
+}
+
+.meta {
+	padding: 5px 10px;
+	border: 1px solid #EFEFEF;
+	background: #F9F9F9;
+}
+
+.meta .more {
+	padding-left: 20px;
+	background: url(/images/Sleek/img04.gif) no-repeat left center;
+}
+
+.meta .comments {
+	padding-left: 20px;
+	background: url(/images/Sleek/img05.gif) no-repeat left center;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 22%;
+	padding-bottom:100px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li {
+}
+
+#sidebar li ul {
+}
+
+#sidebar li li {
+	padding-left: 10px;
+	background: url(/images/Sleek/img06.gif) no-repeat left center;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+#sidebar h2 {
+	margin: 0;
+	padding: 20px 0;
+}
+
+#sidebar a {
+	color: #666;
+	text-decoration: none;
+}
+
+#sidebar a:hover {
+	color: #666;
+	text-decoration: underline;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	padding: 12px 0;
+	background: url(/images/Sleek/img07.gif) repeat-x;
+	text-align: center;
+	font-size: small;
+}
+
+/* Special Formatting */
+code {
+  margin: 5px 0;
+  padding: 10px;
+  text-align: left;
+  display: block;
+  overflow: auto;  
+  font: 500 1em/1.5em 'Lucida Console', 'courier new', monospace;
+  /* white-space: pre; */
+  background: #FAFAFA;
+  border: 1px solid #f2f2f2;  
+  border-left: 3px solid #999999;
+}
+
+blockquote {
+	margin: 15px;
+	padding: 0 0 0 20px;  	
+  background-color: #FAFAFA; 
+	background-position: 8px 10px;
+	border: 1px solid #f2f2f2; 
+	border-left: 3px solid #999999;  
+	font: bold 1.2em/1.5em "Trebuchet MS", Tahoma, sans-serif; 
+	color: #666666;	
+}
+
+blockquote p, blockquote ul, blockquote ol {
+	line-height: normal;
+	font-style: italic;
+}
+.float-left  { float: left; padding-right: 5px; }
+
+.float-right { float: right; padding-left: 5px; }
+
+.align-left  { text-align: left; }
+
+.align-right {	text-align: right; }
+
+/* Table Styling */
+
+table {
+
+	border-collapse: collapse;
+
+	margin: 10px 15px;	
+
+}
+
+th strong {
+
+	color: #fff;
+
+}
+
+th {
+	background: #717170;
+	background-image:url(/images/Sleek/table-bg.jpg); background-repeat:repeat-x;
+	height: 29px;
+	padding-left: 11px;
+	padding-right: 11px;
+	color: #fff;
+	text-align: left;
+	border-left: 1px solid #999999;
+	border-bottom: solid 2px #FFF;
+}
+
+tr {
+	height: 30px;
+}
+
+td {
+	padding-left: 11px;
+	padding-right: 11px;
+	/* border-left: 1px solid #FFE1C3; */
+	border-left: 1px solid #FFF;
+	border-bottom: solid 1px #ffffff;
+}
+
+td.first,th.first {
+	border-left: 0px;
+}
+
+tr.row-a {
+	background: #F8F8F8;
+}
+
+tr.row-b {
+	background: #EFEFEF;
+}
+
+/* form styling */
+form {
+	width: 70%;
+	margin:10px 15px; 
+	padding: 8px;
+	border: 1px solid #ccc;
+	background-color: #FAFAFA; 
+}
+
+label {
+	display:block;
+	font-weight:bold;
+	margin:5px 0;
+}
+
+input {
+	padding: 2px;
+	border:1px solid #bbb;
+	font: normal 1em "Trebuchet MS", Tahoma, sans-serif;
+	color:#777;
+}
+
+textarea {
+	padding:2px;
+	font: normal 1em "Trebuchet MS", Tahoma, sans-serif;
+	border:1px solid #bbb;
+	display:block;
+	color:#777;
+}
+
+input.button { 
+	margin: 0;
+	font: bold 1em Arial, Sans-serif;
+	background: #FFF url(gradientbg.jpg) repeat-x;
+	padding: 2px 3px;
+	color: #333;
+	border: 1px solid #DADADA;
+}
+
+.comment {
+	width: 70%;
+	margin:10px 15px; 
+	padding: 8px;
+	border: 1px solid #ccc;
+	background-color: #FAFAFA; 
+}
+
+/* Special Formatting */
+#thankyou {
+	width: 70%;
+  margin: 5px;
+  padding: 0px 6px;
+  text-align: left;
+  background: yellow;
+  border: 1px solid #999;
+	font-size: 1.4em;
+}
+

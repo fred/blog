@@ -1,0 +1,20 @@
+.post
+  
+  - @articles.each do |article|
+  
+    .title
+      %h3
+        = link_to(article.title, link_to_permalink(article))
+    
+    .article_body
+      = print_formated(article.formatting_type, article.excerpt)
+    
+    .article_published_date
+      %i
+        = article.published_date.strftime("%d %B %Y")
+        
+    %p.meta
+      = link_to "Read More", link_to_permalink(article), :class => "more"
+      = link_to "Comments (#{article.approved_comments_count})", link_to_permalink(article), :class => "comments"
+    
+  = will_paginate @articles

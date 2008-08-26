@@ -1,0 +1,69 @@
+/ 
+/ Template by TemplateFusion.org
+/ http://templatefusion.org
+/ Creative Commons Attribution 2.5 Canada License
+/ 
+/ Name        : Sleek
+/ Description : A nice sleek, clean design.
+/ Notes       : Based off of "splatter" by freecsstemplates.org
+/ 
+
+!!! strict
+%html
+  %head
+    %title= Settings.meta_title
+    %meta{ 'http-equiv' => 'Content-Type', :content => 'text/html; charset=UTF-8'}
+    %meta{ :name => 'keywords', :content => Settings.meta_keywords }
+    %meta{ :name => 'description', :content => Settings.meta_description }
+    %meta{ :name => 'content_author', :content => Settings.meta_content_author}
+    = stylesheet_link_tag  "Sleek/default"
+    = stylesheet_link_tag  "syntaxi/ruby"
+    = stylesheet_link_tag  "syntaxi/yaml"
+    = javascript_include_tag :defaults, :cache => true
+    = javascript_include_tag 'prototype', :cache => true
+    = auto_discovery_link_tag(:rss, :action => 'index', :format => "rss")
+    = auto_discovery_link_tag(:atom, :action => 'index', :format => "atom")
+    
+  %body
+      
+    #header
+      #logo
+        %h1 
+          = link_to Settings.title, "/"
+        %p
+          = link_to Settings.subtitle, "/"
+      #search
+        - form_for(:q, :url => {:controller => "articles", :action => "search"}) do 
+          = text_field_tag :q, "Search"
+          
+    #page
+        
+      #content
+        .flash_notice
+          %p= flash[:notice]
+        = yield
+      
+      #sidebar
+        %ul
+          %h3
+            = link_to "About Me", "/2003/8/9/about-me"
+          %p 
+            I'm Fred, a Ruby on Rails Programmer and Linux sysadmin.
+            %u 
+              %i 
+                = link_to "Read More", "/2003/8/9/about-me"
+          %p
+            = link_to "RSS Feed", formatted_articles_url(:rss)
+          %h3 Tags
+          %ul
+          - @tags.each do |tag|
+            %li
+              = link_to "#{tag.name} (#{tag.taggings.size})", :controller => "articles", :tag   => tag.name
+              
+          = render :partial => "/shared/side_links"
+          = render :partial => "/shared/github"
+  			
+    = render :partial => "/shared/footer"
+        
+    = render :partial => "/shared/google_analytics"
+    

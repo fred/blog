@@ -1,0 +1,23 @@
+development:
+  adapter: mysql
+  encoding: utf8
+  database: fred_blog
+  username: root
+  password:
+  socket:  /opt/local/var/run/mysql5/mysqld.sock
+
+test:
+  adapter: mysql
+  encoding: utf8
+  database: fred_blog_test
+  username: root
+  password:
+  socket:  /opt/local/var/run/mysql5/mysqld.sock
+
+production:
+  adapter: mysql
+  encoding: utf8
+  database: fred_blog
+  username: root
+  password: 
+  socket:  /opt/local/var/run/mysql5/mysqld.sock
